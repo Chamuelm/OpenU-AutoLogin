@@ -5,7 +5,6 @@
   <link rel="stylesheet" href="options.css">
 </head>
 <body>
-<div id="page-wrap">
   <div class="settings">
     <div class="field-wrap">
       <h1>OpenU-AutoLogin</h1>
@@ -15,10 +14,9 @@
     <div class="field-wrap">
         <p> אנא הכנס את תעודת הזהות:</p>
         <input type="text" id="openu_id" /> <br><br>
-        <input value="שמור  הגדרות" type="submit" class="button" onclick="saveChanges()" />
+        <input id="submitButton" value="שמור  הגדרות" type="submit" class="button" maxlength="9" pattern="[0-9]{9}" />
     </div>
   </div>
-</div>
 </body>
 <script src="options.js"></script>
 </html>

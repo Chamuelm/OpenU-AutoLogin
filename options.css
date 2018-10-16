@@ -7,7 +7,6 @@ body {
 h1 {
 	letter-spacing: 2px;
 	text-align:center;
-	color:#ffffff;
 	margin:0 auto;
 }
 
@@ -25,39 +24,10 @@ h2 {
 	box-shadow:0 4px 10px 4px rgba(19,35,47,.3);
 }
 
-#page-wrap {
-     width: 80vw;
-     margin: 0 auto;
-}
-
-label {
-  /*position:absolute;*/
-  transform:translateY(6px);
-  
-  color:rgba(255,255,255,.5);
-  transition:all 0.25s ease;
-  -webkit-backface-visibility: hidden;
-  pointer-events: none;
-  font-size:22px;
-}
-
-label.active {
-  transform:translateY(50px);
-  left:2px;
-  font-size:14px;
-  .req {
-    opacity:0;
-  }
-}
-
-label.highlight {
-	color:#ffffff;
-}
-
-input, textarea {
+input {
   font-size:22px;
   margin: 0 auto;
-  width:289px;
+  width:278px;
   height:100%;
   padding:10px 10px;
   background:none;
@@ -66,37 +36,6 @@ input, textarea {
   color:#ffffff;
   border-radius:0;
   transition:border-color .25s ease, box-shadow .25s ease;
-  &:focus {
-		outline:0;
-		border-color:#1ab188;
-  }
-}
-
-textarea {
-  border:2px solid #a0b3b0;
-  resize: vertical;
-}
-
-.field-wrap {
-  position:relative;
-  margin-bottom:40px;
-}
-
-.top-row {
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  > div {
-    float:left;
-    width:48%;
-    margin-right:4%;
-    &:last-child { 
-      margin:0;
-    }
-  }
 }
 
 .button {
@@ -108,22 +47,16 @@ textarea {
   font-size:2rem;
   font-weight:600;
   text-transform:uppercase;
-  letter-spacing:.1em;
   background:#1ab188;
   color:#ffffff;
   transition:all.5s ease;
   -webkit-appearance: none;
-  &:hover, &:focus {
-    background:#009B70;
-  }
 }
 
-.button-block {
-  display:block;
-  width:100%;
+.button:hover {
+  background:#009B70;
 }
 
-.forgot {
-  margin-top:-20px;
-  text-align:right;
+.field-wrap {
+  margin-bottom:40px;
 }

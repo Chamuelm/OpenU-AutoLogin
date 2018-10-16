@@ -1,14 +1,18 @@
-
+document.addEventListener('DOMContentLoaded', function() {
+  var submitBtn = document.getElementById('submitButton');
+  // onClick's logic below:
+  submitBtn.addEventListener('click', saveChanges());
+});
 
 function saveChanges() {
-        let openu_id = document.getElementById('openu_id');
+        let openu_id_temp = document.getElementById('openu_id');
         // Check that there's some code there.
-        if (!openu_id) {
+        if (!openu_id_temp) {
           message('Error: Missing value');
           return;
         }
 
-        chrome.storage.sync.set({'openu_id': openu_id.value}, function() {
+        chrome.storage.sync.set({'openu_id_storage': openu_id_temp.value}, function() {
           message('Settings saved');
         });
       }
