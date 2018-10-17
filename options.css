@@ -21,6 +21,19 @@ p {
   font-size:1.3rem;
 }
 
+.createdby {
+  font-size: 1.4rem;
+  margin-bottom: 50px;
+}
+
+.credit {
+  direction: ltr;
+}
+
+a, a:visited{
+  color: #8A9298;
+}
+
 .settings {
 	text-align: center;
 	background-color: rgba(19,35,47,.9);
