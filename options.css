@@ -21,17 +21,8 @@ p {
   font-size:1.3rem;
 }
 
-.createdby {
-  font-size: 1.4rem;
-  margin-bottom: 50px;
-}
-
-.credit {
-  direction: ltr;
-}
-
-a, a:visited{
-  color: #8A9298;
+.field-wrap {
+  margin-bottom:40px;
 }
 
 .settings {
@@ -70,13 +61,24 @@ input {
   background:#1ab188;
   color:#ffffff;
   transition:all.5s ease;
-  -webkit-appearance: none;
 }
 
 .button:hover {
   background:#009B70;
 }
 
-.field-wrap {
-  margin-bottom:40px;
+.createdby {
+  font-size: 1.4rem;
+}
+
+.credit {
+  text-align: center;
+  margin: 0 auto;
+  direction: ltr;
+  /*color: #352214;*/
+  color: #7a675b;
+}
+
+.credit a, .credit  a:visited{
+  color: #594b41;
 }
