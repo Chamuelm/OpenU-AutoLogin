@@ -10,11 +10,13 @@
       <h1>OpenU-AutoLogin</h1>
       <h2>התחברות אוטומטית לאוניברסיטה הפתוחה</h2>
     </div>
-    <p class="field-wrap">תוסף זה משתמש בהשלמה האוטומטית של Chrome עבור שם המשתמש והסיסמא לכן יש לוודא שאפשרות זאת בדפדפן פעילה ושהדפדפן "זוכר" את הפרטים הנכונים.</p><br>
+    <p class="field-wrap">אנא מלא/י את פרטי ההתחברות לאתר של האוניברסיטה הפתוחה, כל הנתונים נשמרים מקומית.</p>
+    <p class="field-wrap">ניתן לשמור רק את תעודת הזהות ולתת למנהל הסיסמאות של Chrome לטפל בשדות האחרים אבל במקרה זה על המשתמש לבצע פעילות כלשהי בעמוד (לחיצה בעבר למשל) כדי שההשלמה האוטומטית תפעל והתוסף יוכל להתחבר.</p>
     <div class="field-wrap">
-        <p> אנא הכנס את תעודת הזהות:</p>
-        <input type="text" id="openu_id" /> <br><br>
-        <input id="submitButton" value="שמור  הגדרות" type="submit" class="button" maxlength="9" pattern="[0-9]{9}" />
+        <input type="text" id="openu_username" placeholder="שם משתמש" /> <br>
+        <input type="password" id="openu_password" placeholder="סיסמא" /> <br>
+        <input type="tel" id="openu_id" maxlength="9" pattern="[0-9]{9}" placeholder="תעודת זהות" /> <br><br>
+        <input id="submitButton" value="שמור  הגדרות" type="submit" class="button" />
     </div>
   </div>
 </body>

@@ -5,13 +5,20 @@ body {
 }
 
 h1 {
+  font-size: 2.5rem;
 	letter-spacing: 2px;
 	text-align:center;
 	margin:0 auto;
 }
 
 h2 {
+  font-size: 1.2rem;
 	margin: 0 auto;
+}
+
+p {
+  text-align: right;
+  font-size:1.3rem;
 }
 
 .settings {

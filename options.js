@@ -5,14 +5,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function saveChanges() {
-        let openu_id_temp = document.getElementById('openu_id');
-        // Check that there's some code there.
-        if (!openu_id_temp) {
-          alert('Error: Missing value');
-          return;
-        }
-
-        chrome.storage.sync.set({openu_id_storage: openu_id_temp.value}, function() {
-          alert('Settings saved');
-        });
-      }
+  chrome.storage.local.set({
+    openu_username_storage: document.getElementById('openu_username').value,
+    openu_password_storage: document.getElementById('openu_password').value,
+    openu_id_storage: document.getElementById('openu_id').value
+  }, function() {
+    alert('Settings saved');
+  });
+}
