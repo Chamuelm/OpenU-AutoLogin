@@ -23,5 +23,9 @@
       { "run_at" :"document_idle",
       "matches": ["https://sso.apps.openu.ac.il/login*", "https://sso.apps.openu.ac.il/process/*"],
       "js": ["script.js"]
+      } ,
+      { "run_at" :"document_idle",
+      "matches": ["https://www.openu.ac.il/*"],
+      "js": ["scriptMainSite.js"]
       } ]
   }
